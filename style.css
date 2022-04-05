@@ -87,7 +87,7 @@ main {
 }
 
 .project-tile a:hover {
-    color: #373737;
+    color: #000000;
 }
 
 .project-tile img {
@@ -172,4 +172,33 @@ footer {
     color: rgb(37, 37, 37);
     background-color: transparent;
     position: relative
+}
+
+/* responsive style */
+
+@media (max-width: 800px) {
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+
+    #projects {
+        padding: 50px;
+    }
+
+    #project-row {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .project-tile {
+        margin: 15px 0px;
+    }
+
+    #contact-links ul {
+        flex-direction: column-reverse;
+    }
 }
